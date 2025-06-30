@@ -1,0 +1,45 @@
+/*
+Theme Name: LiteRead
+Theme URI: https://example.com/your-theme
+Author: Your Name or Company
+Author URI: https://example.com
+Description: A brief description of your theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: your-theme
+Tags: responsive, custom-background, custom-logo
+
+This theme is designed for WordPress.
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moul&display=swap");
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  font-size: calc(100vw / 1440 * 16);
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+h1 {
+  font-family: 'Moul', sans-serif;
+}
+
+.clamp-3-lines {
+  display: -webkit-box; /* Kích hoạt box layout */
+  -webkit-box-orient: vertical; /* Hướng box dọc */
+  -webkit-line-clamp: 3; /* Giới hạn 3 dòng */
+  line-clamp: 3;
+  overflow: hidden; /* Ẩn phần dư */
+  text-overflow: ellipsis; /* Thêm dấu "..." */
+  white-space: normal; /* Cho phép xuống dòng */
+  min-height: 55px; /* Đảm bảo phần tử có chiều cao */
+}
+
+
