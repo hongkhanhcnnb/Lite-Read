@@ -3,5 +3,6 @@ wp-config.php
 readme.html          
 license.txt    
 wp-content/uploads
+.env
 
 /node_modules
